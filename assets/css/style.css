@@ -127,7 +127,7 @@ body.theme-light .navbar-brand {
 
 .badge-soft {
   background: rgba(45, 212, 191, 0.15);
-  color: var(--accent);
+  color: #2dd4bf;
   border: 1px solid rgba(45, 212, 191, 0.4);
   padding: 8px 14px;
   border-radius: 999px;
