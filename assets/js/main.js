@@ -121,7 +121,8 @@ window.addEventListener('load', () => {
   if (themeToggle) {
     const setLabel = () => {
       const isLight = document.body.classList.contains('theme-light');
-      themeToggle.textContent = isLight ? 'Dark Mode' : 'Light Mode';
+      themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+      themeToggle.setAttribute('title', isLight ? 'Switch to dark mode' : 'Switch to light mode');
     };
     setLabel();
     themeToggle.addEventListener('click', () => {
