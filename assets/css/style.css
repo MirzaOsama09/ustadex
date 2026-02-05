@@ -72,6 +72,15 @@ body.theme-light .navbar.scrolled {
 .navbar-brand {
   font-weight: 700;
   letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+  display: block;
 }
 
 .hero {
