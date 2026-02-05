@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KPI Pulse - Automated KPI Collection for Education</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body class="grid-lines">
+  <div class="cursor-spotlight" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">KPI Pulse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="solutions.html">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2"><button class="theme-toggle" type="button" data-theme-toggle>Light Mode</button></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-primary" href="appointments.html">Book a Demo</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="glow"></div>
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge-soft mb-3">Automated KPI Integrity for Education</span>
+          <h1 class="display-5 fw-bold">Collect, validate, and score institutional KPIs in days, not semesters.</h1>
+          <p class="lead text-muted mt-3">KPI Pulse helps universities, colleges, and school networks automate evidence collection, validation workflows, and scoring. Deliver audit-ready dashboards with confidence.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-primary btn-lg" href="appointments.html">Schedule a Strategy Call</a>
+            <a class="btn btn-outline-light btn-lg" data-scroll href="#platform">See the Platform</a>
+          </div>
+          <div class="stats mt-5">
+            <div class="stat">
+              <div class="fs-3 fw-bold" data-count="96">0</div>
+              <div class="text-muted">% data validation accuracy</div>
+            </div>
+            <div class="stat">
+              <div class="fs-3 fw-bold" data-count="42">0</div>
+              <div class="text-muted">Days saved per audit cycle</div>
+            </div>
+            <div class="stat">
+              <div class="fs-3 fw-bold" data-count="180">0</div>
+              <div class="text-muted">KPIs automated per institution</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-illustration reveal">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <div class="text-muted">Current KPI Health</div>
+                <div class="fs-4 fw-bold">Institution Score</div>
+              </div>
+              <div class="badge-soft pulse">Live Sync</div>
+            </div>
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="card-glass">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-muted">Student Success</span>
+                    <strong>92%</strong>
+                  </div>
+                  <div class="meter mt-2"><span style="width:92%"></span></div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-glass">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-muted">Program Quality</span>
+                    <strong>88%</strong>
+                  </div>
+                  <div class="meter mt-2"><span style="width:88%"></span></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card-glass">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-muted">Regulatory Alignment</span>
+                    <strong>94%</strong>
+                  </div>
+                  <div class="meter mt-2"><span style="width:94%"></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 text-muted">Verified by automated evidence checks, scoring engine, and approvals.</div>
+          </div>
+        </div>
+      </div>
+      <div class="logos mt-5">
+        <div class="logo-tile">Apex University</div>
+        <div class="logo-tile">Civic Colleges</div>
+        <div class="logo-tile">Metro Schools</div>
+        <div class="logo-tile">Northern Academy</div>
+        <div class="logo-tile">Summit Institute</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="platform">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <h2 class="section-title">A complete KPI operations hub.</h2>
+          <p class="section-sub">Centralize submissions from every department, enforce evidence requirements, and auto-score KPIs against accreditation standards.</p>
+          <div class="timeline mt-4">
+            <div class="timeline-item">
+              <h6>Collection Automation</h6>
+              <p class="text-muted">Automated reminders, pre-built KPI templates, and secure uploads.</p>
+            </div>
+            <div class="timeline-item">
+              <h6>Validation &amp; Audits</h6>
+              <p class="text-muted">Evidence checks, anomaly detection, and approval workflows.</p>
+            </div>
+            <div class="timeline-item">
+              <h6>Scoring &amp; Reporting</h6>
+              <p class="text-muted">Real-time scoring, benchmarking, and audit-ready reports.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <div class="card-glass">
+                <div class="icon-chip mb-3">AI</div>
+                <h5>Smart KPI Library</h5>
+                <p class="text-muted">100+ KPI blueprints aligned to regional accreditation frameworks.</p>
+              </div>
+            </div>
+            <div class="col-md-6 reveal">
+              <div class="card-glass">
+                <div class="icon-chip mb-3">QC</div>
+                <h5>Validation Engine</h5>
+                <p class="text-muted">Automated cross-checking, evidence trails, and role-based approvals.</p>
+              </div>
+            </div>
+            <div class="col-md-6 reveal">
+              <div class="card-glass">
+                <div class="icon-chip mb-3">BI</div>
+                <h5>Insight Studio</h5>
+                <p class="text-muted">Dashboards for executive oversight with drill-down KPI analytics.</p>
+              </div>
+            </div>
+            <div class="col-md-6 reveal">
+              <div class="card-glass">
+                <div class="icon-chip mb-3">API</div>
+                <h5>Integrations</h5>
+                <p class="text-muted">Connect SIS, LMS, HR, and finance systems seamlessly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 reveal">
+          <div class="card-glass">
+            <h5>Compliance Confidence</h5>
+            <p class="text-muted">Score KPIs against accreditation standards, with auto-generated evidence packs.</p>
+            <a class="text-primary" href="solutions.html">Explore governance workflows</a>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal">
+          <div class="card-glass">
+            <h5>Operational Transparency</h5>
+            <p class="text-muted">Track KPI ownership, timelines, and performance from a single pane.</p>
+            <a class="text-primary" href="solutions.html">View operational dashboards</a>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal">
+          <div class="card-glass">
+            <h5>Strategic Planning</h5>
+            <p class="text-muted">Link KPI outcomes to strategic initiatives and budget allocations.</p>
+            <a class="text-primary" href="solutions.html">See planning workflows</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h2 class="section-title">Workflow automation that faculty actually adopt.</h2>
+          <p class="section-sub">Make KPI reporting effortless for every stakeholder with guided submissions, smart evidence checks, and easy approvals.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="gradient-border reveal">
+            <div>
+              <h5>Faculty Experience Highlights</h5>
+              <ul class="text-muted mb-0">
+                <li>Personalized KPI dashboards with due dates.</li>
+                <li>Auto-filled submissions from SIS and LMS.</li>
+                <li>Evidence request checklist and validation status.</li>
+                <li>One-click approvals for leadership reviews.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4 reveal">
+          <div class="card-glass">
+            <h6 class="text-muted">Security</h6>
+            <h4>Role-based access &amp; audit trails</h4>
+            <p class="text-muted">Protect sensitive data with granular permissions and immutable logs.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card-glass">
+            <h6 class="text-muted">Analytics</h6>
+            <h4>Performance benchmarking</h4>
+            <p class="text-muted">Compare program outcomes across campuses and cohorts.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card-glass">
+            <h6 class="text-muted">Evidence</h6>
+            <h4>Automated validation</h4>
+            <p class="text-muted">Detect outliers, missing evidence, and late submissions automatically.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h2 class="section-title">Trusted by academic leadership.</h2>
+          <p class="section-sub">Institutions rely on KPI Pulse to operationalize continuous improvement.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-md-6 reveal">
+              <div class="card-glass">
+                <p>“KPI Pulse turned a 5-month accreditation prep into a 6-week sprint.”</p>
+                <div class="text-muted">Dr. L. Carr, Provost</div>
+              </div>
+            </div>
+            <div class="col-md-6 reveal">
+              <div class="card-glass">
+                <p>“We finally have a single source of truth for KPI evidence.”</p>
+                <div class="text-muted">J. Rao, QA Director</div>
+              </div>
+            </div>
+            <div class="col-md-6 reveal">
+              <div class="card-glass">
+                <p>“Leadership reviews are now data-driven, not anecdotal.”</p>
+                <div class="text-muted">M. Singh, Strategy Office</div>
+              </div>
+            </div>
+            <div class="col-md-6 reveal">
+              <div class="card-glass">
+                <p>“The scoring engine is consistent with our accreditation rubric.”</p>
+                <div class="text-muted">C. Bennett, Accreditation Lead</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="section-title">Book a discovery session.</h2>
+          <p class="section-sub">Show us your KPI framework and we will map it to an automated workflow tailored for your institution.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a class="btn btn-primary btn-lg" href="appointments.html">Schedule Demo</a>
+            <a class="btn btn-outline-light btn-lg" href="contact.html">Talk to Sales</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="calendar-shell reveal">
+            <iframe title="Schedule" src="https://calendar.google.com/calendar/embed?src=your_calendar_id%40group.calendar.google.com&ctz=America%2FNew_York" style="border:0" width="100%" height="420" frameborder="0" scrolling="no"></iframe>
+          </div>
+          <div class="small text-muted mt-2">Replace the calendar ID in the iframe with your institution scheduling calendar.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 reveal">
+          <div class="pricing-card">
+            <h5>Starter Campus</h5>
+            <p class="text-muted">Best for single-campus institutions.</p>
+            <div class="fs-2 fw-bold">$9k<span class="fs-6">/year</span></div>
+            <ul class="text-muted mt-3">
+              <li>50 KPIs</li>
+              <li>3 integrations</li>
+              <li>Standard validation</li>
+            </ul>
+            <a class="btn btn-outline-light w-100" href="pricing.html">View details</a>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal">
+          <div class="pricing-card featured">
+            <div class="badge-soft mb-2">Most Popular</div>
+            <h5>Multi-Campus</h5>
+            <p class="text-muted">For multi-campus networks and systems.</p>
+            <div class="fs-2 fw-bold">$18k<span class="fs-6">/year</span></div>
+            <ul class="text-muted mt-3">
+              <li>200 KPIs</li>
+              <li>Unlimited integrations</li>
+              <li>Advanced scoring engine</li>
+            </ul>
+            <a class="btn btn-primary w-100" href="pricing.html">Start planning</a>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal">
+          <div class="pricing-card">
+            <h5>Enterprise</h5>
+            <p class="text-muted">Custom for government &amp; large systems.</p>
+            <div class="fs-2 fw-bold">Custom</div>
+            <ul class="text-muted mt-3">
+              <li>Unlimited KPIs</li>
+              <li>Dedicated success team</li>
+              <li>Custom evidence workflows</li>
+            </ul>
+            <a class="btn btn-outline-light w-100" href="contact.html">Talk to sales</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h2 class="section-title">Frequently asked questions.</h2>
+          <p class="section-sub">Everything you need to know to evaluate KPI Pulse.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="d-flex flex-column gap-3">
+            <div class="faq-item reveal">
+              <strong>How quickly can we deploy?</strong>
+              <p class="text-muted mb-0">Most institutions launch in 3-6 weeks depending on data integrations.</p>
+            </div>
+            <div class="faq-item reveal">
+              <strong>Can we align to our accreditation framework?</strong>
+              <p class="text-muted mb-0">Yes, KPI Pulse supports custom rubrics, scoring models, and evidence weights.</p>
+            </div>
+            <div class="faq-item reveal">
+              <strong>Do you support on-premise deployments?</strong>
+              <p class="text-muted mb-0">Hybrid and private cloud deployments are available for regulated institutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5>KPI Pulse</h5>
+          <p class="text-muted">Automated KPI collection, validation, and scoring for educational institutions.</p>
+        </div>
+        <div class="col-lg-2">
+          <div class="text-uppercase text-muted small">Product</div>
+          <ul class="list-unstyled">
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="appointments.html">Book Demo</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <div class="text-uppercase text-muted small">Company</div>
+          <ul class="list-unstyled">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="solutions.html#security">Security</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <div class="text-uppercase text-muted small">Get Updates</div>
+          <div class="d-flex gap-2 mt-2">
+            <input class="form-control" type="email" placeholder="Work email" />
+            <button class="btn btn-primary">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="text-muted small mt-4">© 2026 KPI Pulse. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
