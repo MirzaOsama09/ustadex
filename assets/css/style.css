@@ -52,9 +52,21 @@ a {
   text-decoration: none;
 }
 
+.text-muted {
+  color: var(--muted) !important;
+}
+
+.text-primary {
+  color: var(--brand) !important;
+}
+
 .navbar {
   transition: all 0.3s ease;
   border-bottom: 1px solid transparent;
+}
+
+body.theme-light .navbar {
+  color: var(--text);
 }
 
 .navbar.scrolled {
@@ -71,10 +83,15 @@ body.theme-light .navbar.scrolled {
 
 .navbar-brand {
   font-weight: 700;
+  font-size: x-large;
   letter-spacing: 0.5px;
   display: inline-flex;
   align-items: center;
   gap: 10px;
+}
+
+body.theme-light .navbar-brand {
+  color: var(--brand);
 }
 
 .navbar-brand img {
@@ -320,6 +337,12 @@ body.cursor-click .cursor-ring {
   transform: translateY(-8px);
 }
 
+body.theme-light .table-dark {
+  --bs-table-bg: #ffffff;
+  --bs-table-color: var(--text);
+  --bs-table-border-color: var(--line);
+}
+
 .faq-item {
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -435,6 +458,15 @@ body.theme-light .hero-illustration {
 
 .nav-link.active {
   color: var(--accent);
+}
+
+body.theme-light .nav-link {
+  color: var(--text);
+}
+
+body.theme-light .nav-link:hover,
+body.theme-light .nav-link:focus {
+  color: var(--brand);
 }
 
 @media (max-width: 992px) {
