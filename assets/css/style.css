@@ -16,15 +16,16 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   font-family: "Manrope", "Segoe UI", Arial, sans-serif;
   background: radial-gradient(1200px 700px at 80% -10%, rgba(124, 58, 237, 0.35), transparent 60%),
-              radial-gradient(900px 600px at 0% 0%, rgba(45, 212, 191, 0.25), transparent 55%),
-              var(--bg);
+    radial-gradient(900px 600px at 0% 0%, rgba(45, 212, 191, 0.25), transparent 55%),
+    var(--bg);
   color: var(--text);
   line-height: 1.6;
   transition: background 0.4s ease, color 0.3s ease;
@@ -43,8 +44,8 @@ body.theme-light {
   --brand: #2563eb;
   --shadow: 0 20px 60px rgba(20, 30, 60, 0.12);
   background: radial-gradient(1200px 700px at 80% -10%, rgba(37, 99, 235, 0.18), transparent 60%),
-              radial-gradient(900px 600px at 0% 0%, rgba(14, 165, 233, 0.18), transparent 55%),
-              var(--bg);
+    radial-gradient(900px 600px at 0% 0%, rgba(14, 165, 233, 0.18), transparent 55%),
+    var(--bg);
 }
 
 a {
@@ -206,13 +207,13 @@ body.theme-light .card-glass {
 
 .grid-lines {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
 body.theme-light .grid-lines {
   background-image: linear-gradient(to right, rgba(11, 18, 32, 0.06) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(11, 18, 32, 0.06) 1px, transparent 1px);
+    linear-gradient(to bottom, rgba(11, 18, 32, 0.06) 1px, transparent 1px);
 }
 
 .cursor-spotlight {
@@ -344,8 +345,23 @@ body.cursor-click .cursor-ring {
   height: 100%;
 }
 
+body.theme-light .pricing-card {
+  background: radial-gradient(circle at 20% 20%, rgb(37 235 200 / 18%), transparent 50%), radial-gradient(circle at 80% 80%, rgb(22 130 249 / 20%), transparent 55%), rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(58, 237, 121, 0.6);
+  border-radius: 24px;
+  padding: 32px;
+  height: 100%;
+}
+
+
 .pricing-card.featured {
   border-color: rgba(45, 212, 191, 0.7);
+  box-shadow: 0 25px 60px rgba(45, 212, 191, 0.15);
+  transform: translateY(-8px);
+}
+
+body.theme-light .pricing-card.featured {
+  border-color: rgba(124, 58, 237, 0.6);
   box-shadow: 0 25px 60px rgba(45, 212, 191, 0.15);
   transform: translateY(-8px);
 }
@@ -361,6 +377,10 @@ body.theme-light .table-dark {
   border-radius: 16px;
   padding: 18px 20px;
   background: rgba(18, 27, 51, 0.8);
+}
+
+body.theme-light .faq-item {
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .footer {
@@ -384,15 +404,31 @@ body.theme-light .table-dark {
 }
 
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.35); }
-  70% { box-shadow: 0 0 0 18px rgba(45, 212, 191, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.35);
+  }
+
+  70% {
+    box-shadow: 0 0 0 18px rgba(45, 212, 191, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(45, 212, 191, 0);
+  }
 }
 
 .pulse {
@@ -452,16 +488,24 @@ body.theme-light .theme-toggle .icon-moon {
   background: linear-gradient(120deg, rgba(79, 156, 255, 0.8), rgba(124, 58, 237, 0.8));
 }
 
-.gradient-border > div {
+.gradient-border>div {
   border-radius: 20px;
   background: rgba(10, 15, 31, 0.85);
   padding: 26px;
 }
 
+body.theme-light .gradient-border>div {
+  border-radius: 20px;
+  background: radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.18), transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(249, 115, 22, 0.2), transparent 55%),
+    rgba(255, 255, 255, 0.95);
+  padding: 26px;
+}
+
 .hero-illustration {
   background: radial-gradient(circle at 20% 20%, rgba(79, 156, 255, 0.4), transparent 50%),
-              radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.35), transparent 55%),
-              rgba(18, 27, 51, 0.95);
+    radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.35), transparent 55%),
+    rgba(18, 27, 51, 0.95);
   border: 1px solid rgba(79, 156, 255, 0.35);
   border-radius: 24px;
   padding: 26px;
@@ -469,8 +513,8 @@ body.theme-light .theme-toggle .icon-moon {
 
 body.theme-light .hero-illustration {
   background: radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.18), transparent 50%),
-              radial-gradient(circle at 80% 80%, rgba(249, 115, 22, 0.2), transparent 55%),
-              rgba(255, 255, 255, 0.95);
+    radial-gradient(circle at 80% 80%, rgba(249, 115, 22, 0.2), transparent 55%),
+    rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(37, 99, 235, 0.25);
 }
 
@@ -489,6 +533,10 @@ body.theme-light .hero-illustration {
 
 .nav-link.active {
   color: var(--accent);
+}
+
+body.theme-light .nav-link.active {
+  color: var(--brand);
 }
 
 body.theme-light .nav-link {
