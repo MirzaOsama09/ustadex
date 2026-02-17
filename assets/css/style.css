@@ -306,7 +306,7 @@ body.cursor-click .cursor-ring {
 
 .logo-tile {
   background: rgba(255, 255, 255, 0.03);
-  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border: 1px dashed rgba(0 26 249 / 77%);
   border-radius: 14px;
   padding: 14px;
   text-align: center;
